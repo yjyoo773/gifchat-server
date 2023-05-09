@@ -10,6 +10,7 @@ const io = new Server(server);
 const User = require('./models/user');
 
 const DATABASE = process.env.ATLAS_URI
+let testLinting="hello world"
 const mongoose = require('mongoose');
 mongoose.connect(DATABASE, { useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
